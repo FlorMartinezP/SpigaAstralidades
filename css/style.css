@@ -1,0 +1,458 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Exo 2", sans-serif;
+}
+
+header {
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+}
+
+.logo, .imagen1 {
+  width: 20%;
+}
+
+.logo:hover {
+  -webkit-transform: scaleX(1.2);
+  -ms-transform: scaleX(1.2);
+  transform: scaleX(1.2);
+}
+
+.imagen1:hover {
+  border-radius: 50%;
+}
+
+h1 {
+  color: #ee2773;
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+h1 {
+  animation-duration: 3s;
+  animation-name: aparecer;
+  animation-iteration-count: infinite;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0.5;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    color: white;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.menu {
+  text-align: center;
+  height: 30px;
+  margin-top: 10px;
+}
+
+.menu ul li {
+  display: inline;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: black;
+  padding-left: 10px;
+  margin-right: 5px;
+}
+
+.enlace1, .enlace2, .enlace3, .enlace4 {
+  border-right: 2px solid;
+}
+
+section {
+  background-color: black;
+  color: white;
+  padding-top: 10px;
+}
+
+.imagen2 {
+  float: right;
+  height: 200px;
+  padding-right: 20px;
+}
+
+.tituloServicios {
+  border: solid;
+  border-color: white;
+  width: 100px;
+  padding: 10px;
+  margin-left: 30px;
+  background-color: gray;
+}
+
+.listadoServicios {
+  display: block !important;
+}
+
+#cartas, #talleres, #otros {
+  margin-left: 70px;
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  width: 150px;
+  background-color: #6363ad;
+  display: block !important;
+}
+
+.imagen3 {
+  padding-top: 30px;
+  display: block;
+  clear: both;
+  margin: 0 auto;
+  width: 70%;
+}
+
+.publicaciones {
+  float: right;
+}
+
+.tituloPublicaciones {
+  float: right;
+  border: solid;
+  border-color: white;
+  width: 130px;
+  padding: 10px;
+  margin-right: 30px;
+  margin-top: 30px;
+  background-color: gray;
+}
+
+.listadoArticulos {
+  margin-right: 70px;
+  margin-top: 80px;
+  padding-top: 10px;
+  list-style: none;
+}
+
+.listadoArticulos a {
+  color: white;
+}
+
+.imagen4 {
+  margin-top: 30px;
+  height: 150px;
+  padding-left: 20px;
+}
+
+.preguntas {
+  margin: 0 auto;
+  border: solid;
+  border-color: white;
+  width: 200px;
+  padding: 10px;
+  margin-top: 30px;
+  background-color: gray;
+}
+
+.carousel-text {
+  font-size: large;
+}
+
+.largo {
+  font-size: medium;
+}
+
+.imagen5, .imagen6, .imagen7 {
+  padding-top: 30px;
+  height: 300px;
+  opacity: 60%;
+}
+
+.sobreMi {
+  border: solid;
+  border-color: white;
+  width: 100px;
+  padding: 10px;
+  margin-left: 30px;
+  margin-top: 30px;
+  background-color: gray;
+}
+
+.imagen8 {
+  margin-top: 30px;
+  float: right;
+  height: 180px;
+  padding-right: 20px;
+}
+
+.descripcion {
+  margin-left: 30px;
+  margin-top: 10px;
+  width: 50%;
+  text-align: justify;
+}
+
+.imagen9 {
+  margin-top: 50px;
+  float: left;
+  height: 370px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.contacto {
+  padding-bottom: 10px;
+}
+
+.tituloContacto {
+  margin: 0 auto;
+  border: solid;
+  border-color: white;
+  width: 100px;
+  padding: 10px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  background-color: gray;
+}
+
+label {
+  padding-right: 5px;
+}
+
+.nombre, .tipoConsulta, .email {
+  padding-left: 15px;
+  display: inline;
+}
+
+.apellido {
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cuadroTexto {
+  margin-top: 10px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.botones {
+  display: flex;
+  flex: row;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.botonEnviar, .botonLimpiar {
+  display: inline;
+  padding-left: 5px;
+}
+
+button a {
+  text-decoration: none;
+  color: black;
+  font-size: medium;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+/* Mobile style */
+@media only screen and (max-width: 400px) {
+  .encabezado1 {
+    font-size: larger;
+    line-height: 20px;
+    padding-top: 0px;
+  }
+
+  .logo {
+    width: 60%;
+  }
+
+  .imagen1 {
+    width: 60%;
+  }
+
+  #header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu {
+    align-items: center;
+    padding-bottom: 120px;
+  }
+
+  .menu li {
+    border-style: none;
+  }
+
+  .menu li a {
+    display: block;
+  }
+
+  .imagen2 {
+    padding-top: 60px;
+    height: 180px;
+  }
+
+  .listadoServicios li {
+    margin-left: 10px;
+  }
+
+  .listadoArticulos {
+    margin-left: 20px;
+  }
+
+  .definicion {
+    font-size: small;
+    padding: 5px !important;
+  }
+
+  .carousel-text {
+    font-size: large;
+  }
+
+  .largo {
+    font-size: medium;
+  }
+
+  .imagen5, .imagen6, .imagen7 {
+    padding-left: 10px;
+    padding-top: 30px;
+    height: 200px;
+    width: 33%;
+    opacity: 60%;
+  }
+
+  .imagen8 {
+    margin-top: 30px;
+    float: right;
+    width: 45%;
+    padding-right: 0px;
+  }
+
+  .descripcion {
+    width: 80%;
+  }
+
+  .imagen9 {
+    margin-top: 30px;
+    width: 95%;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding-bottom: 10px;
+  }
+
+  .tituloContacto {
+    clear: both;
+  }
+
+  .tipoConsulta {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 10px;
+  }
+
+  .novedades {
+    padding-left: 20px;
+  }
+}
+/* Tablet style */
+@media only screen and (min-width: 400px) and (max-width: 960px) {
+  .encabezado1 {
+    font-size: medium;
+    line-height: 20px;
+    padding-top: 0px;
+  }
+
+  .logo, .imagen1 {
+    width: 30%;
+    height: 80%;
+    padding-top: 20px;
+  }
+
+  .menu {
+    align-items: center;
+  }
+
+  .menu li {
+    border-style: none;
+  }
+
+  .imagen2 {
+    padding-top: 10px;
+    height: 200px;
+  }
+
+  .listadoServicios li {
+    margin-left: 10px;
+  }
+
+  .definicion {
+    font-size: small;
+    padding: 5px !important;
+  }
+
+  .imagen5, .imagen6, .imagen7 {
+    padding-top: 30px;
+    height: 200px;
+    width: 33%;
+    margin-left: 20px;
+  }
+
+  .imagen7 {
+    margin-right: 20px;
+  }
+
+  .imagen8 {
+    margin-top: 30px;
+    float: right;
+    width: 45%;
+    padding-right: 0px;
+  }
+
+  .descripcion {
+    width: 80%;
+  }
+
+  .imagen9 {
+    clear: both;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 90%;
+    margin-right: 40px;
+    margin-left: 40px;
+    padding-bottom: 10px;
+  }
+
+  .tituloContacto {
+    clear: both;
+  }
+
+  .tipoConsulta {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 10px;
+  }
+
+  .novedades {
+    padding-left: 20px;
+  }
+}
+/* Desktop style */
+
+/*# sourceMappingURL=style.css.map */
